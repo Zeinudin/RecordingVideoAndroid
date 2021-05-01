@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:onClick="onClick"
+        android:id="@+id/btnRecord"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/btnStop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="85dp"
+        app:srcCompat="@drawable/ic_baseline_keyboard_voice_24"
+        tools:ignore="OnClick,UnknownId,VectorDrawableCompat" />
+
+    <ImageButton
+        android:onClick="onClick"
+        android:id="@+id/btnPlay"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/btnRecord"
+        android:layout_alignBottom="@+id/btnRecord"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:layout_toRightOf="@+id/imageButton5"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+        tools:ignore="OnClick,VectorDrawableCompat" />
+
+    <ImageButton
+        android:onClick="onClick"
+        android:id="@+id/imageButton5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/btnRecord"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/btnRecord"
+        android:layout_toRightOf="@+id/btnRecord"
+        app:srcCompat="@drawable/ic_baseline_stop_24"
+        tools:ignore="OnClick,VectorDrawableCompat" />
+
+    <TextView
+        android:onClick="onClick"
+        android:id="@+id/textView"
+        android:layout_width="359dp"
+        android:layout_height="251dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="73dp"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="24sp"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
